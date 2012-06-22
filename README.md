@@ -1,4 +1,4 @@
 useful
 ======
 
-Useful python functions
+Useful python functions.
