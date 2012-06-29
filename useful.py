@@ -91,6 +91,23 @@ def safe_reverse(xs):
     new_xs.reverse()
     return new_xs
 
+# http://stackoverflow.com/questions/9766608/zipwith-analogue-in-python/9766650#9766650
+def zipWith(f, xs, ys):
+    map(f, xs, ys)
+
+def repeat(n):
+    """
+    Return an infinite series of n's
+
+    >>> x = repeat(42)
+    >>> x.next()
+    42
+    >>> x.next()
+    42
+    """
+    while True:
+        yield n
+
 def replicate(n, x):
     """
     Return 'n' 'x's as a list
