@@ -87,9 +87,7 @@ def safe_shuffle(xs):
     return new_xs
 
 def safe_reverse(xs):
-    new_xs = list(xs)
-    new_xs.reverse()
-    return new_xs
+    return list(reversed(xs))
 
 # http://stackoverflow.com/questions/9766608/zipwith-analogue-in-python/9766650#9766650
 def zipWith(f, xs, ys):
